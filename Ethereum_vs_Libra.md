@@ -1,4 +1,6 @@
+# Ethereum vs Libra
 
+## High Level Comparison
 
 |  **Dimensions** | **Libra** | **Eth1.x** | **Eth2.0** |
 | :---: | :---: | :---: | :---: |
@@ -13,6 +15,7 @@
 |  Accounts | A user is free to create multiple<br/>accounts by generating multiple key-pairs. Accounts controlled by the same user have no inherent<br/>link to each other. Pseudonymity for users. The Libra protocol does not link accounts to a real-world identity, but they will have KYC in their official onboarding. | Users have pseudonymity. | Users have pseudonymity. |
 |  Verifying reads and transactions | Authenticated reads, clients can easily verify validator transaction history, as each transaction determines a new ledger state that can be recomputed and checked. | Necessary to replay the whole history, starting from a trusted block, all the way until the given transaction. |  |
 
+## VM Comparison
 
 |  **Dimensions** | **Libra** | **Eth1.x** | **Eth2.0** |
 | :---: | :---: | :---: | :---: |
