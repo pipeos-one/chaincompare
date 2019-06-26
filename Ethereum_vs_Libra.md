@@ -40,6 +40,6 @@
 |  **** | State is stored in each user account, which looks like AccountKey => {resources: (Resource: value)][], modules: (Module: code)[]} | State is only stores in contracts. |  |
 |  Available types | booleans, unsigned 64-bit integers, 256-bit addresses, fixed-size byte arrays, structs (including resources), and references | A lot more types: https://solidity.readthedocs.io/en/v0.5.9/types.html |  |
 |   | Custom resource types, with rules that are checked by the bytecode verifier at compile time | No compile time checks for custom types, though possible to build on top of the current protocol. | Possible to build on top of the protocol |
-|  Logs | Events: Not readable from Move VM, cheap, used to read changes live or back in history | Events: Not readable from Move VM, cheap, used to read changes live or back in history | Events: Not readable from Move VM, cheap, used to read changes live or back in history |
+|  Logs | Events: Not readable from Move VM, cheap, used to read changes live or back in history | Events: Not readable from EVM, cheap, used to read changes live or back in history | Events: Not readable from EVM, cheap, used to read changes live or back in history |
 |   | Contained in each transaction output | Contained in each block |  |
 |  Blocks | Transactions are batched as an optimization, in the consensus protocol. Otherwise, transactions are treated sequentially. | Blocks are crucial, they provide the link to the previous block, along with the proof that the entire chain is valid. |  |
